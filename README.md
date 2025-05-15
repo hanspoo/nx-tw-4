@@ -17,4 +17,4 @@ Tailwind is configured directly in the Vite configuration file, following the in
 
 Additionally, the project is also working with DaisyUI.
 
-The reason for this is that the current NX generator still uses the old Tailwind setup based on PostCSS, which is now deprecated..
+The reason for this is that the current NX generator still uses the old Tailwind setup based on PostCSS, which is now deprecated.
