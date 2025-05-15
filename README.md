@@ -44,7 +44,7 @@ import tailwindcss from '@tailwindcss/vite';
 plugins: [tailwindcss(), react()],
 ```
 
-## apps/front/package.json
+### apps/front/package.json
 
 Add
 
