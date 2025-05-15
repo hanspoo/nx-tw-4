@@ -26,7 +26,7 @@ rm apps/front/postcss.config.js
 ```
 
 ```bash
-npm i tailwindcss@4
+npm install tailwindcss@4 @tailwindcss/vite daisyui
 ```
 
 ### apps/front/src/styles.css
@@ -36,10 +36,18 @@ npm i tailwindcss@4
 @plugin "daisyui";
 ```
 
-### vite.config.ts
+### apps/front/vite.config.ts
 
 ```js
 import tailwindcss from '@tailwindcss/vite';
 ...
 plugins: [tailwindcss(), react()],
+```
+
+## apps/front/package.json
+
+Add
+
+```json
+"type": "module",
 ```
