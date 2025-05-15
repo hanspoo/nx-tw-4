@@ -34,6 +34,7 @@ npm install tailwindcss@4 @tailwindcss/vite daisyui
 ```css
 @import 'tailwindcss';
 @plugin "daisyui";
+@source "../../..";
 ```
 
 ### apps/front/vite.config.ts
