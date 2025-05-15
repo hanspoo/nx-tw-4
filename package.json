@@ -1,10 +1,16 @@
 {
-  "name": "@nx-oidc-starter/source",
+  "name": "nx-tw-4",
   "version": "0.0.0",
   "license": "MIT",
+  "description": "Nx with tailwindcss 4 (and daisyui)",
   "scripts": {},
+  "author": {
+    "name": "Hans Poo",
+    "email": "hans@welinux.cl"
+  },
   "private": true,
   "dependencies": {
+    "@tailwindcss/vite": "^4.1.6",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "react-router-dom": "6.29.0"
@@ -24,12 +30,13 @@
     "@vitejs/plugin-react": "^4.2.0",
     "@vitest/ui": "^3.0.0",
     "autoprefixer": "10.4.13",
+    "daisyui": "^5.0.35",
     "jiti": "2.4.2",
     "jsdom": "~22.1.0",
     "nx": "21.0.3",
     "postcss": "8.4.38",
     "prettier": "^2.6.2",
-    "tailwindcss": "3.4.3",
+    "tailwindcss": "^4.1.6",
     "tslib": "^2.3.0",
     "typescript": "~5.7.2",
     "vite": "^6.0.0",
