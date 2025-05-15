@@ -1,48 +1,35 @@
-import NxWelcome from './nx-welcome';
-
-import { Route, Routes, Link } from 'react-router-dom';
+import { CardSample } from 'components';
 
 export function App() {
   return (
-    <div>
-      <NxWelcome title="front" />
-
-      {/* START: routes */}
-      {/* These routes and navigation have been generated for you */}
-      {/* Feel free to move and update them to fit your needs */}
-      <br />
-      <hr />
-      <br />
-      <div role="navigation">
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/page-2">Page 2</Link>
-          </li>
-        </ul>
+    <div className="m-4">
+      <h1 className="text-xl font-bold my-6">Sample Home Page</h1>
+      <h2 className="my-4 font-bold">This next component in the app code</h2>
+      <div className="avatar avatar-placeholder">
+        <div className="bg-neutral text-neutral-content w-24 rounded-full">
+          <span className="text-3xl">D</span>
+        </div>
       </div>
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <div>
-              This is the generated root route.{' '}
-              <Link to="/page-2">Click here for page 2.</Link>
-            </div>
-          }
-        />
-        <Route
-          path="/page-2"
-          element={
-            <div>
-              <Link to="/">Click here to go back to root page.</Link>
-            </div>
-          }
-        />
-      </Routes>
-      {/* END: routes */}
+      <div className="avatar avatar-online avatar-placeholder">
+        <div className="bg-neutral text-neutral-content w-16 rounded-full">
+          <span className="text-xl">AI</span>
+        </div>
+      </div>
+      <div className="avatar avatar-placeholder">
+        <div className="bg-neutral text-neutral-content w-12 rounded-full">
+          <span>SY</span>
+        </div>
+      </div>
+      <div className="avatar avatar-placeholder">
+        <div className="bg-neutral text-neutral-content w-8 rounded-full">
+          <span className="text-xs">UI</span>
+        </div>
+      </div>
+      <h2 className="my-4 mt-8 font-bold">
+        Next component loaded from a library of components
+      </h2>
+      <p>Required using @source directive in the css file.</p>
+      <CardSample />
     </div>
   );
 }

@@ -5,6 +5,9 @@
   "references": [
     {
       "path": "./apps/front"
+    },
+    {
+      "path": "./libs/components"
     }
   ]
 }
