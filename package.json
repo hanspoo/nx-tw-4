@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "license": "MIT",
   "description": "Nx with tailwindcss 4 (and daisyui)",
-  "scripts": {},
+  "scripts": {
+    "dev": "nx serve front"
+  },
   "author": {
     "name": "Hans Poo",
     "email": "hans@welinux.cl"

@@ -2,6 +2,17 @@
 
 NX monorepo React project configured with modern tailwind 4 integration.
 
+## Quickstart
+
+```bash
+git clone https://github.com/hanspoo/nx-tw-4
+cd nx-tw-4/
+npm install
+nx serve front
+```
+
+## Why ?
+
 Tailwind is configured directly in the Vite configuration file, following the integration approach recommended in the official Tailwind 4 documentation for the latest version.
 
 Additionally, the project is also working with DaisyUI.
