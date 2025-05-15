@@ -21,6 +21,8 @@ The reason for this is that the current NX generator still uses the old Tailwind
 
 ## Steps
 
+1.- Create and nx monorepo project with a react application with tailwind called _front_, then:
+
 ```bash
 rm apps/front/postcss.config.js
 ```
