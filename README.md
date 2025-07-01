@@ -58,3 +58,6 @@ Add
 ```json
 "type": "module",
 ```
+
+Not sure if this last one is needed, by default we use typescript with modular javascript, so it would be redundant, i remember i had some trouble
+that was fixed putting this, may be the .ts extension in vite config is enough, i will check out.
