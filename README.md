@@ -17,7 +17,7 @@ Additionally, the project is also working with DaisyUI.
 
 The reason for this is that the current NX generator still uses the old Tailwind setup based on PostCSS, which is now deprecated.
 
-## Steps
+## Manual modification of existing monorepo
 
 1.- Create and nx monorepo project with a react application with tailwind called _front_, then:
 
@@ -36,6 +36,12 @@ npm install tailwindcss@4 @tailwindcss/vite daisyui
 @plugin "daisyui";
 @source "../../..";
 ```
+
+¿ How many .. in @source ?
+
+The double dots in @source, in this case three, are one for each ancestor folder up to the root. From there
+tailwind will look for the files of source code to inspect and find its classes. You may change this to be more specific to 
+where your source code is.
 
 ### apps/front/vite.config.ts
 
