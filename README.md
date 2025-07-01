@@ -39,7 +39,7 @@ npm install tailwindcss@4 @tailwindcss/vite daisyui
 
 ¿ How many .. in @source ?
 
-The double dots in @source, in this case three, are one for each ancestor folder up to the root. From there
+The double dots in @source, in this case three, are one for each ancestor folder up to the root of the monorepo. From there
 tailwind will look for the files of source code to inspect and find its classes. You may change this to be more specific to 
 where your source code is.
 
