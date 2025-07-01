@@ -52,3 +52,15 @@ Add
 ```json
 "type": "module",
 ```
+
+### Library Support
+
+If you have a library for which you want to add tailwind, follow the same steps as above.
+
+If you add a `css` file in your library, then you have to import the css file into your application's css for it to work.
+
+Example: 
+
+```css
+@import '../../../libs/mylibrary/src/styles.css';
+```
