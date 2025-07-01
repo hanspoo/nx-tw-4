@@ -29,7 +29,7 @@ rm apps/<APP>/postcss.config.js
 npm install tailwindcss@4 @tailwindcss/vite daisyui
 ```
 
-### apps/<APP>/src/styles.css
+### apps/<APP\>/src/styles.css
 
 ```css
 @import 'tailwindcss';
@@ -43,7 +43,7 @@ The double dots in @source, in this case three, are one for each ancestor folder
 tailwind will look for the files of source code to inspect and find its classes. You may change this to be more specific to 
 where your source code is.
 
-### apps/<APP>/vite.config.ts
+### apps/<APP\>/vite.config.ts
 
 ```js
 import tailwindcss from '@tailwindcss/vite';
