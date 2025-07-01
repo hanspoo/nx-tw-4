@@ -19,7 +19,7 @@ The reason for this is that the current NX generator still uses the old Tailwind
 
 ## Manual modification of existing monorepo
 
-1.- Let's suppose you have a react app called _<APP>_, then:
+1.- Let's suppose you have a react app called <APP\>, then:
 
 ```bash
 rm apps/<APP>/postcss.config.js
