@@ -61,3 +61,15 @@ Add
 
 Not sure if this last one is needed, by default we use typescript with modular javascript, so it would be redundant, i remember i had some trouble
 that was fixed putting this, may be the .ts extension in vite config is enough, i will check out.
+
+### Library Support
+
+If you have a library for which you want to add tailwind, follow the same steps as above.
+
+If you add a `css` file in your library, then you have to import the css file into your application's css for it to work.
+
+Example: 
+
+```css
+@import '../../../libs/mylibrary/src/styles.css';
+```
