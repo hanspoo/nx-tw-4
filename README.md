@@ -58,7 +58,7 @@ You may have some compiler errors, like:
 externalize-deps.. Failed to resolve "@tailwindcss/vite". This package is ESM only but it was tried ...
 ```
 
-by default we use typescript that is modular javascript, and this shouldn't be happening... it was fixed wiht one of the next:
+by default we use typescript that is modular javascript and this shouldn't be happening; here some ways to fix it:
 
 #### Explicit module type in package.json
 
