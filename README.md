@@ -51,16 +51,40 @@ import tailwindcss from '@tailwindcss/vite';
 plugins: [tailwindcss(), react()],
 ```
 
-### apps/<APP\>/package.json
+### Compile Errors
 
-Add
+You may have some compiler errors, like:
+```
+externalize-deps.. Failed to resolve "@tailwindcss/vite". This package is ESM only but it was tried ...
+```
+
+by default we use typescript that is modular javascript, and this shouldn't be happening... it was fixed wiht one of the next:
+
+#### Explicit module type in package.json
+
+If your app has package.json, you can put it there:
+
+apps/<APP\>/package.json
 
 ```json
 "type": "module",
 ```
 
-Not sure if this last one is needed, by default we use typescript with modular javascript, so it would be redundant, i remember i had some trouble
-that was fixed putting this, may be the .ts extension in vite config is enough, i will check out.
+You can change the global package.json if it doesn't generate you trouble.
+
+### or rename vite config
+
+The other option is to change vite config extension to explicit modular type script, rename the file:
+
+From
+```
+vite.config.ts
+```
+
+To
+```
+vite.config.mts
+```
 
 ### Library Support
 
