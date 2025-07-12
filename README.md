@@ -86,6 +86,8 @@ To
 vite.config.mts
 ```
 
+That should do it.
+
 ### Library Support
 
 If you have a library for which you want to add tailwind, follow the same steps as above.
